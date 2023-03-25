@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
 
       </div>
-      {!isFormSubmitted ? (
+      
         <div className="app__footer-form app__flex">
           <div className="app__flex">
             <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
@@ -52,16 +52,11 @@ const Footer = () => {
             />
           </div>
           {/* <button type="button" className="p-text"  onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button> */}
-          <button type="button" className="p-text" onClick={() => window.location = 'mailto:chitoonaung.ts@gmail.com'}>{!loading ? 'Send Message' : 'Sending...'}</button>
+          <button type="button" className="p-text" onClick={() => window.location = 'mailto:chitoonaung.ts@gmail.com'}>'Send Message'</button>
           
         </div>
-      ) : (
-        <div>
-          <h3 className="head-text">
-            Thank you for getting in touch!
-          </h3>
-        </div>
-      )}
+      ) 
+      
      
     </>
   );
