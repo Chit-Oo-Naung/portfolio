@@ -3,13 +3,10 @@ import React, { useState } from 'react';
 // import Socialmedia from '../../components/Socialmedia';
 import { images } from '../../constants';
 import { AppWrap, AppWrap2, MotionWrap } from '../../wrapper';
-import { client } from '../../client';
 import './Footer.scss';
 
 const Footer = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
 
   const { username, email, message } = formData;
 
