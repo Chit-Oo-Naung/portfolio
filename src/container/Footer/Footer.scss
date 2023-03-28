@@ -108,7 +108,7 @@
         padding: 1rem 2rem;
         border-radius: 10px;
         border:none;
-        background-color: var(--secondary-color);
+        background-color: #000;
         font-weight: 500;
         color: var(--white-color);
         outline: none;
@@ -120,7 +120,7 @@
 
 
         &:hover {
-            background-color: #2430af;
+            background-color: var(--secondary-color);
         }
     }
     @media screen and (max-width:768px){
